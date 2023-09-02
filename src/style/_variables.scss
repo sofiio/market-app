@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'TKT-Regular';
+    src: url('./fonts/TKT-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TKT-Medium';
+    src: url('./fonts/TKT-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TKT-Bold';
+    src: url('./fonts/TKT-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+//Colors
+$main: #99cc66;
+$secondary: #171d25;
+$dark: #171725;
+$grey: #696974;
+
+//Fonts
+$TKT-Regular: 'TKT-Regular';
+$TKT-Medium: 'TKT-Medium';
+$TKT-Bold: 'TKT-Bold';

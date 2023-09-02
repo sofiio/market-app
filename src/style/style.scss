@@ -1,0 +1,105 @@
+@import './variables';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: $TKT-Regular;
+    background-color: #fafafb;
+}
+
+h1 {
+    font-family: $TKT-Regular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.8rem;
+    color: $main;
+}
+
+sub {
+    font-family: $TKT-Regular;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2rem;
+    color: $secondary;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+input {
+    background: #ffffff;
+    border: 2px solid #e5e5ed;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 15px;
+    min-height: 44px;
+    &:hover,
+    :focus,
+    :focus-visible,
+    :active {
+        border: 2px solid $main;
+        outline: none;
+    }
+}
+
+input[type='checkbox'] {
+    -webkit-appearance: none;
+    appearance: none;
+    min-width: 20px;
+    min-height: 20px;
+    padding: 0;
+    border-radius: 6px;
+    border: 1px solid #e5e5ed;
+    outline: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.rc-slider-handle::before {
+    content: '||';
+    font-size: 10px;
+    color: #99cc66;
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    font-family: 'TKT-Regular';
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+::placeholder {
+    color: #92929d;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1286px;
+}
+
+@media (max-width: 1600px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+}

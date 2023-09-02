@@ -1,0 +1,29 @@
+@import '../../../style/variables';
+@import '../../../style/mixins';
+
+.rangeContainer {
+    .inputs {
+        @include flexDirection(row);
+        justify-content: space-between;
+        input {
+            width: 150px;
+            font-family: $TKT-Regular;
+            font-size: 16px;
+            border: 1px solid #e5e5ed;
+        }
+        .inputContainer {
+            position: relative;
+            @include flexCenter;
+            label {
+                position: absolute;
+                right: 15px;
+                color: #92929D;
+            }
+        }
+    }
+
+    .slider {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+}

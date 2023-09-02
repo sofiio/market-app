@@ -1,0 +1,35 @@
+@mixin flexDirection($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-content: center;
+}
+
+
+@mixin flexCenter() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+// Buttons
+@mixin buttonDefault($bg) {
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background: darken($bg, 10%);
+        transition: all 0.3s ease;
+    }
+    &:active {
+        background: darken($bg, 20%);
+    }
+}
+
+@mixin buttonIcon {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
